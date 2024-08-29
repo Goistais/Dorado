@@ -1,0 +1,760 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #F28E00;
+    padding: 15px 20px;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 120px;
+}
+
+.menu-icon, .user-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+
+
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.menu-icon img,
+.user-icon img {
+    width: 70px; /* Adjust size based on your icons */
+}
+
+.logo img {
+    max-height: 100px; /* Adjust based on the logo size */
+}
+
+.navigation-buttons {
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+    background-color: #F28E00;
+}
+
+.nav-button {
+    display: flex;
+    align-items: center;
+    margin: 0 80px;
+}
+
+    .nav-button img {
+        width: 64px;
+        margin-right: 8px;
+    }
+
+    .nav-button span {
+        font-weight: bold;
+        color: #FFFFFF;
+        font-size: 16px;
+    }
+
+
+
+
+
+
+
+/* Improved Top Menu Section */
+.top-menu {
+    display: flex;
+    justify-content: center;
+    background-color: #FFB700;
+    padding: 20px 0;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+    text-align: center;
+}
+
+.menu-image {
+    width: 60px;
+    height: 60px;
+    background-color: #E07E00;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.menu-button {
+    background-color: #F28E00;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.menu-button:hover {
+    background-color: #E07E00;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+
+
+
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.section-header h2 {
+    font-size: 24px;
+}
+
+.section-header .view-all {
+    font-size: 14px;
+    color: #F28E00;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+/* Multi-Column Layouts */
+
+/* Restaurant Cards Section */
+.restaurant-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Dinner Options Section */
+.dinner-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Relax Options Section */
+.relax-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0px;
+}
+
+/* Experience Cards Section */
+.experience-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+/* Celebration Cards Section */
+.celebration-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+/* Celebrations Section */
+.celebrations {
+    margin: 40px 0;
+    padding: 0 20px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section-header h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.section-header .view-all {
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.celebration-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.celebration-card {
+    display: flex;
+    background-color: #F8F8F8;
+    padding: 15px;
+    border: 1px solid #DDD;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+
+.celebration-card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.celebration-card img {
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.celebration-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.celebration-info .category {
+    font-size: 14px;
+    color: #777;
+    margin: 0;
+    font-weight: 500;
+}
+
+.celebration-info h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin: 5px 0 0;
+}
+
+@media (max-width: 768px) {
+    .celebration-cards {
+        gap: 10px;
+    }
+
+    .celebration-card {
+        padding: 10px;
+    }
+
+    .celebration-card img {
+        width: 100px;
+        height: 70px;
+        margin-right: 15px;
+    }
+
+    .celebration-info h3 {
+        font-size: 18px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* Guest Options Section */
+.guest-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Card Styles */
+.card, .dinner-option, .relax-option, .experience-card, .celebration-card, .guest-option {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: left;
+}
+
+.card img, .dinner-option img, .relax-option img, .experience-card img, .celebration-card img, .guest-option img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.card h3, .dinner-option h3, .relax-option h3, .experience-card h3, .celebration-card h3, .guest-option h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #444;
+}
+
+.card p, .celebration-card p, .relax-option p, .experience-card p {
+    font-size: 16px;
+    color: #666;
+    margin: 0 0 10px;
+    line-height: 1.5;
+}
+
+.card-footer {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #888;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Responsive Styles */
+
+/* Tablet Layout */
+@media (max-width: 1024px) {
+    .restaurant-cards, .dinner-options, .celebration-options, .guest-options {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .relax-options, .experience-cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Mobile Layout */
+@media (max-width: 768px) {
+    .restaurant-cards, .dinner-options, .celebration-options, .guest-options, .relax-options, .experience-cards {
+        grid-template-columns: 1fr;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .section-header .view-all {
+        margin-top: 10px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.entertainment-section {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+    .section-header h2 {
+        font-size: 24px;
+        color: #333;
+        margin: 0;
+    }
+
+    .section-header .see-all {
+        color: #888;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+.event-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.event-date {
+    background-color: #F3D2A0;
+    padding: 10px;
+    text-align: center;
+    width: 60px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+    .event-date .month {
+        font-size: 14px;
+        color: #7B5E4C;
+        text-transform: uppercase;
+    }
+
+    .event-date .day {
+        font-size: 24px;
+        color: #333;
+        font-weight: bold;
+    }
+
+.event-details {
+    flex-grow: 1;
+}
+
+.event-type {
+    font-size: 14px;
+    color: #888;
+    margin: 0 0 5px 0;
+}
+
+.event-title {
+    font-size: 18px;
+    color: #333;
+    margin: 0 0 10px 0;
+    font-weight: bold;
+}
+
+.event-meta {
+    display: flex;
+    align-items: center;
+    color: #555;
+}
+
+    .event-meta .event-time {
+        margin-right: 10px;
+        font-size: 16px;
+    }
+
+    .event-meta .event-location {
+        font-size: 16px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+h1, h3 {
+    font-weight: bold;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+    color: #555;
+}
+
+a {
+    color: #FF9F1C;
+    text-decoration: none;
+}
+
+/* Header Section */
+.restaurant-header {
+    background-color: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.header-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.header-menu a {
+    color: white;
+    font-size: 18px;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.restaurant-info {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin-top: -30px;
+    border-radius: 10px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.restaurant-image-placeholder img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.restaurant-title {
+    text-align: center;
+}
+
+    .restaurant-title h1 {
+        font-size: 28px;
+        color: #333;
+    }
+
+    .restaurant-title p {
+        font-size: 16px;
+        color: #666;
+    }
+
+.meal-time {
+    font-size: 18px;
+    color: #444;
+    margin-top: 10px;
+}
+
+.view-more {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: right;
+}
+
+/* Description Section */
+.restaurant-description {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 20px 0;
+    border-radius: 10px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+}
+
+    .restaurant-description p {
+        font-size: 16px;
+        color: #444;
+    }
+
+    .restaurant-description .view-more {
+        display: block;
+        margin-top: 10px;
+        text-align: right;
+    }
+
+/* Details Section */
+.restaurant-details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 20px 20px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.detail-item {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+    .detail-item h3 {
+        font-size: 20px;
+        color: #333;
+        margin-bottom: 10px;
+        flex: 1;
+    }
+
+    .detail-item p {
+        font-size: 16px;
+        color: #555;
+        flex: 2;
+    }
+
+.detail-icon img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.outlined-box {
+    border: 2px solid #c8c8c8;
+}
+
+/* Reservation Button */
+.reservation-button {
+    margin: 20px 20px;
+    text-align: center;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.reserve-btn {
+    background-color: #FF9F1C;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 18px;
+    display: inline-block;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .restaurant-info {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .restaurant-title {
+        text-align: left;
+    }
+
+    .restaurant-description, .restaurant-details, .reservation-button {
+        margin: 20px auto;
+        max-width: 1000px;
+    }
+
+    .detail-item {
+        flex: 1 1 48%;
+        margin: 0;
+    }
+
+    .restaurant-details {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    .suite-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0px;
+    }
+
+        .suite-item img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            margin-right: 20px;
+        }
+
+        .suite-item .info {
+            flex: 1;
+        }
+
+        .suite-item .title {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .suite-item .description {
+            color: #555;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
